@@ -1,0 +1,114 @@
+*{
+box-sizing:border-box;
+margin: 30;
+
+}
+
+
+header {
+  width: 100%;
+  text-align: center;
+  height: 30em;
+  padding-top: 13.5em;
+}
+
+h1{
+  text-align: center;
+  font-size: 9em;
+  font-family: papyrus;
+  font-weight: 900;
+  font-style: italic;
+  color: lavender;
+
+}
+
+
+:root{
+
+    --col01: rgb(0, 0, 0);
+    --col02: rgb(70, 70, 70);
+    --col03: rgb(183, 183, 183);
+    --col04: rgb(10, 42, 205);
+    --border: solid 10px var(--col02)
+}
+
+h1:hover{
+  color: cornflowerblue;
+  transition: 2s;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color:  silver;
+    background-image: linear-gradient(silver, lavender,honeydew,lightpink);
+}
+
+
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 15px 15px;
+    width: 1400px;
+height: 1050px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "A1 . A3 . A5"
+      "A1 A2 A3 A4 A5"
+      ". A2 . A4 ."
+      "A6 A6 A6 A6 A6"
+      "A6 A6 A6 A6 A6";
+  }
+  
+  .A1 { 
+    
+        background-image: linear-gradient(white, aliceblue,lavenderblush, lightblue);
+    grid-area: A1; 
+    box-shadow: 12px 12px #00000415;
+  }
+  
+  .A2 { 
+    background-image: linear-gradient(lightblue, lightsteelblue, lightskyblue);
+    grid-area: A2; 
+    box-shadow: 12px 9px #00000446;
+  }
+  
+  .A3 {
+    background-image: linear-gradient(lightskyblue, powderblue, lightpink, skyblue);
+    grid-area: A3; 
+    box-shadow: 10px 10px #0000046b;
+  }
+  
+  .A4 { 
+    background-image: linear-gradient(skyblue, slateblue, steelblue);
+    grid-area: A4; 
+    box-shadow: 12px 9px #00000492;
+  }
+  
+  .A5 {
+    background-image: linear-gradient(lavenderblush,steelblue, royalblue, navy);
+    grid-area: A5;
+    box-shadow: 12px 12px #000004a9;
+  }
+  
+  .A6 { 
+    background-image: linear-gradient(lightsteelblue, skyblue, steelblue,plum, royalblue, midnightblue);
+    grid-area: A6;
+    border-block: 5px solid silver;
+  
+  }
+
+  
+
+  /* Reflection \* 
+  
+When designing the layout for the website I chose Hedra’a image as the source of reference. I particularly had fun with the gradient feature to add a level of interest in terms of design. 
+I wanted to have a cohesive suit of boxes and decided on keeping a consistency of blue. As I felt that with the layout of the boxes your eyes travel from left to right across the screen. 
+The motion inspired the decision to merge the gradient feature and use of blue. I chose a light colour on the left-hand side of the box to merge into a darker, deeper blue. 
+I enjoyed this affect as I believe it creates a sense of interest while keeping a consistent design across the suite. Originally, I had a think boarder around all the boxes, I felt that this took away from the softer nature of the design.
+When I removed them, I initially thought that it looked better than with the boarders, but the website design felt somewhat unfinished. I then explored further option within the coding abilities and found the shadow feature. On the top layer of boxes, I had a slight shadow surrounding the right-hand side of the box.
+To maintaining the gradual fade, I changed the opacity of the shadow along the line of boxes. Hence the last box’s boarder is almost completely black. I also tried to incorporate a shadow on the bottom box but when I added it, the format looked off. Through this trial and error, I added boarder-block on the top and bottom of the box, as without anything on the outside of the final box it felt as though it was lacking. 
+
+Another design decision I made was adding was a touch of light pink within the colour palate. As I wanted to maintain the consistency of a softer ambience and overall tone, I felt that adding particularly ‘lavender blush’ added to this objective. I added this throughout the gradient to a few of the singular boxes. 
+I believe the affect created a feeling of a pink sky on a beautiful sunset. To accompany this, I chose a subtle background and continued the theme of a slight tone of pink, hence the ‘lavender blush’ is mixed with a light grey.   
+
+One of the biggest design decisions I made was altering the heading font and putting a transition to change colour. I felt that this tied in with the aim of the overall design. Hence, the fade of gradient from pink to blue is consistent with changing from ‘lavender’ to ‘cornflowerblue’. 
