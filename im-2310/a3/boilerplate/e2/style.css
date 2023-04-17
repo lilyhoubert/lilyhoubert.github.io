@@ -1,0 +1,159 @@
+/* z-index order */
+
+*{
+  box-sizing: border-box;
+  background-origin: border-box;
+  margin: 0;
+}
+
+h1 {
+  color: rgba(187, 159, 230, 0.865);
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  border-style: solid;
+  border-width: 15px 30px;
+  margin: 25px 50px 75px 100px;
+
+}
+
+/* Basis for colour palette comes from 1bit Monitor Glow Palette by Polyducks */
+/* https://lospec.com/palette-list/1bit-monitor-glow */
+/* you're welcome to change the colours if you want or any of the other general page style */
+:root{
+  --col-01:#151717;
+  --col-02:#f0f6f0;
+  --col-03:#7b7bf093;
+  --col-04:#b6e878;
+  --border: 1px solid var(--col-02);
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--col-01);
+  color: var(--col-02);
+  padding: 2vw;
+}
+
+details {
+  font: 16px "Open Sans", Calibri, sans-serif;
+  width: 620px;
+}
+
+details > summary {
+  padding: 2px 6px;
+  width: 15em;
+  background-color: #31388b;
+  border: none;
+  box-shadow: 3px 3px 4px rgb(227, 220, 220);
+  cursor: pointer;
+}
+
+details > p {
+  border-radius: 0 0 10px 10px;
+  background-color: #6e1252;
+  padding: 2px 6px;
+  margin: 0;
+  box-shadow: 3px 3px 4px black;
+}
+
+details[open] > summary {
+  background-color: rgb(108, 9, 52);
+}
+
+
+
+/*
+  i've set up a basic flexbox for each recipe container - you might want to change some of the 
+  flex properties here on the container or on the individual flex items depending on how you want to style them
+*/
+.RecipeBox{
+  display: flex;
+  flex-direction: column;
+  border: var(--border);
+}
+
+.FilterSection{
+  color: lightblue
+
+}
+
+.FilterBox{
+
+}
+
+.FilterButton{
+  color:navy
+
+}
+
+.SelectedFilter{
+  color: green
+  
+}
+
+.RecipeLink{
+
+}
+
+.RecipeName{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 25px;
+  color: bisque;
+
+}
+
+.Author{
+  font-family: verdana;
+   font-style: oblique;
+  font-size: 20px;
+
+}
+
+.RecipeImageContainer{
+
+}
+
+.RecipeImg{
+
+}
+
+.Attribution{
+
+}
+
+.Publisher{
+
+}
+
+.Cuisine{
+  font-size: 20px;
+
+}
+
+.TimeToCook{
+  font-size: 20px;
+}
+
+.SkillLevel{
+  font-size: 20px;
+}
+
+.Course{
+  font-size: 20px;
+}
+
+.Servings{
+  font-size: 20px;
+}
+
+.Dietary{
+  font-size: 20px;
+}
+
+
+.SpecialEquipment{
+  color:rgba(255, 0, 0, 0.594)
+
+}
+
