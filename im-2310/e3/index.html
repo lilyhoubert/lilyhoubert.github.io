@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<!-- 
+
+  PROVIDE MEANINGFUL FEEDBACK TO THE FOLLOWING ELEMENTS:
+  1) <button> with the id of load-link on the loading page (index.html)
+  2) <div> with the id of load-throbber on the loading page (index.html)
+  3) <li> inside of the <ol> inside of the <nav> on the information page (hosono.html)
+  4) <button> with the id of mode-button on the information page (hosono.html)
+  5) switchModes() function - hint you can add a transition CSS property to the <body> and it will be inherited 
+     by all the elements inside, so when custom CSS variables are changed it will apply transition
+
+-->
+<!-- Reflection // Design decision making
+  Initiating the process of changing the website design, I started off by playing around with different loading animations. I decided that I wanted to have a loading signal within the shape of a circle. I personally feel that logically a clockwise motion symbolises a waiting process whilst also signifying to the user that they are ‘correctly’ waiting. The idea is similar to the spinning rainbow wheel that Apple uses when the mouse transforms showing computer is buffering. I played around with the different sizes (width/height), colour and radius of the circular spinning motion. I thought that it reminded me of a spinning sphere on an axis and I really enjoyed how the animation turned out. 
+  After I decided on the particular loading bar, I needed to change the initial ‘click’ motion. I enjoyed the simplicity of the loading page but needed to signify to the user to click on the right spot. I changed the cursor to pointer when hovering of the button. I also changed the background boarder to 10 to draw more attention to the button. 
+
+  The next area that needed to be addressed was the display that directed the user around the website. Originally the website didn’t show at all that you could click on the heading titles and hence this needed to be changed. My first step to help this was changing the cursor to point and therefore giving more feedback that clicking on the title is correct. I played around with different ways to group the titles, I started with a table but it felt fairly boxed and structured. At this point I wanted to develop a sort of aesthetic for the website. To draw inspiration I started to research a little bit about what the website was about. Haruomi Hosono’s music feels nostalgic, airy but overall pop based and encompasses the Japanese’s tone of older pop music. 
+  His album cover for ‘Pacific’ is an island and often his other work demonstrates a cooler tone. This inspired me to maintain the cooler tone and change the background of the title listings to a blue gradient. It isn’t necessarily my favourite look but I like the design choice more in the dark mode feature. I think this could also be due to boarder change from black to white within the dark mode. I did enjoy the fact that the listings are in a circular shape as I felt it reminded me of a cloudy nature, similar to the vibe of his music and album covers. The part I had most frustration with was the listing of number column down the left, ideally I would remove them completely but I wasn’t sure if I was required to keep that information in context to the assignment. 
+  
+  In terms of the mode button, I honestly didn’t realise it was even on the website until my third time navigating the site. After discovering its capabilities I altered the size of the box and allowed the cursor to symbolise a clicking notion. I also decreased the opacity of the box as otherwise you couldn’t read through when scrolling down the website. I felt this draw the user into investigating the mode capabilities more and thus choosing the mode that they enjoyed opportunity the website. 
+
+
+The final design design that I made was to add a song from the artist onto the page just to set the overall tone whilst scrolling through the information about an incredible artist that I now know and appreciate. 
+
+-->
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Loading Page</title>
+
+    <script src="./fakeLoad.js" defer></script>
+
+  </head>
+
+  <body id="load-body">
+
+      <h1>Haruomi Hosono</h1>
+      <!--
+        Typically I'd use an <a> here but as we're faking a load time I'm using a <button> instead.  If it was an 
+        <a> I would leave off the target attribute so that it would redirect the current tab.
+      -->
+      <!--
+        The function loadPageAfterDelay() is declared in the file fakeLoad.js - it takes a number value that sets the 
+        amount of time it takes in ms and a url to redirect to.
+      -->
+      <button id="load-link" onclick="loadPageAfterDelay(10000, './hosono.html')">Click to Load Page</button>
+      <!--
+        This is a div we're using for the throbber - if we wanted to do a % based loading bar there is an element 
+        called <progress> but as this one is just indicating a wait rather than providing direct feedback on progress I've 
+        opted for using a <div>.
+      -->
+      <div id="load-throbber"></div>
+
+  </body>
+
+</html>
