@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Player Experiment</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="playerControls.js" defer></script>
+
+  </head>
+
+  <body>
+
+    <!-- this element holds all of the media player -->
+    <div class="video-player-wrapper">
+      <!-- this element holds the video element and the overlay -->
+      <div class="video-element-wrapper">
+
+        <video id="videoElement" controls>
+          <source src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/miac.mp4" type="video/mp4">
+        </video>
+
+        <img id="videoPlayOverlay" src="./icons/play.svg">
+
+      </div>
+      <!-- this element holds all of the custom controls -->
+      <div class="video-controls-wrapper" id="controlsWrapper">
+
+        <button class="video-control-button" id="playButton"></button>
+        <button class="video-control-button" id="muteButton"></button>
+
+        <progress class="video-progress-bar" id="progressBar" value="0"></progress>
+        <button class="video-control-button" id="screenSize"></button>
+
+
+<!-- REFLECTION 
+
+My overall aim in creating a cohesive website was choosing colours that fit the video animation. Hence, when designing the play and the mute button the lime green background colour stood out enough to catch the user’s attention but didn’t take away from the visual. I also thought that the purple tones went well with the green.
+Keeping this in mind, I decided to maintain the green theme and choose a darker more forest tone for the feedback on the play button. As logically the mute and play button feedback could not be the same colour I chose grey as I didn’t want to draw much attention to the feature. Another colour choice I made with the animation in mind was the progress bar. As this feature will become fairly prominent throughout the user experience, I wanted the choice to go with the colours already heavily on the screen but as well being a colour that is visually appealing in itself. 
+The electric blue bar with purple undertones I believe matches the overall aesthetic of the website. One of the biggest design decisions I made was to change the background colour to black. I believe this makes the video pop and the other colour choices stand out with it. 
+
+-->
+        
+      </div>
+
+    </div>
+
+  </body>
+
+</html>
